@@ -13,4 +13,4 @@
 
 
 
-# Actually Carsten is doing all the work in this project and Gregor is only selling it as his own for fame!
+# Actually Gregor is doing all the work in this project; Cartsen is only doing bullshit!
