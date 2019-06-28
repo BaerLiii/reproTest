@@ -1,0 +1,67 @@
+---
+title: "Gregors first Markdown"
+author: "Gregor Liegl"
+date : "27.06.2019"
+output: pdf_document
+bibliography: markdown_course.bib
+fontsize: 11pt
+classoption: a4paper
+---
+
+# Author's Photo
+
+![](../material/GL.jpg)
+
+# R Markdown
+
+@heycke_no_2018 told us how this works. ***Great guys***.
+
+This is an R Markdown document. 
+Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents.
+For more details on using R Markdown see [bookdown.org/yihui/rmarkdown](https://bookdown.org/yihui/rmarkdown).
+
+## Using R and Markdown
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+You can embed an R code chunk like this:
+
+```{r cars, echo=FALSE}
+m.cars <- round(sd(cars$speed),2)
+```
+
+And you can use in-line code to show your results in the text: `r m.cars`.
+
+[@bosnjak_establishing_2018]
+You could also run R calculations in the code like this `r m.cars * 2`, but ensure that your text is still readable. 
+
+| A | B | C |
+|---|---|---|
+| 1 | 2 | 3 |
+
+Table: This is an awesome table
+
+
+
+## Some great formulas 
+
+$\Gamma _ { \epsilon } ( x ) = [ 1- e ^ { - 2\pi \epsilon } ] ^ { 1- x } \prod _ { n = 0} ^ { \infty } \frac { 1- \operatorname{exp} ( - 2\pi \epsilon ( n + 1) ) } { 1- \operatorname{exp} ( - 2\pi \epsilon ( x + n ) ) }$
+
+
+
+$6 \mathrm { CO } _ { 2 } + 6 \mathrm { H } _ { 2 } \mathrm { O } \rightarrow \mathrm { C } _ { 6 } \mathrm { H } _ { 12 } \mathrm { O } _ { 6 } + 6 \mathrm { O } _ { 2 }$
+
+
+## Speed and distance
+
+The corrlelation is `r cor(cars$speed, cars$dist)`. **Just WOW**.
+
+
+## Further information
+
+For further information, take a look at the work of @heycke_no_2018, @rammstedt_relationships_2018, or @berning_publication_2016.
+These authors are *great*.
+
+
+\newpage
+
+# References
